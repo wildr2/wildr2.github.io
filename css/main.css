@@ -1,10 +1,11 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin: 0 !important;
+    padding: 0 !important;
+    /*margin: 60px auto;*/
+    margin-top: 0px;
+    width: 100%;
 }
-.pdf{
-    margin: 0px auto;
-}
+
 
 
 nav ul, footer ul {
@@ -18,47 +19,88 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #a6a6a6;
     font-style: italic;
 }
 a:hover {
     /*text-decoration: underline;*/
-    color: #333;
+    color: black;
 }
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 2.8em;
+    font-family:'Courier New', 'Arial', 'Sans-Serif';
+    font-weight: normal;
+    margin: 7px;
+    padding: 0;
 }
 p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 1.4em;
     color: #333;
 }
 nav {
-    /*border-bottom: 1px solid #d5d5d5;*/
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
 
-.border{
-    content:'';
-    padding-bottom: 5px;
-    margin-bottom: 150px;
-    border-bottom: 1px solid #d5d5d5;
+.fineprint{
+    font-size: 1em;
+    color: #5d5d5d;
 }
 
-.blurb .accent{
-    color: #C9244B;
+.accent{
+    /*color: #a51537;*/
+    font-weight: bold;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.block0{
+    padding-bottom: 0px;
+    border-bottom: 1px solid #a6a6a6;
+    width: 100%;
+    background: #685c50;
+}
+.block1{
+    padding-bottom: 0px;
+    border-bottom: 1px solid #a6a6a6;
+    width: 100%;
+    background: #fAfAfA;
+}
+.block2{
+    padding-bottom: 0px;
+    border-bottom: 1px solid #a6a6a6;
+    width: 100%;
+    background: white;
 }
 
-ul.posts li {
-    list-style: none;
+.page{
+    margin: auto;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    padding-left: 50px; 
+    border-left: 1px solid #a6a6a6;
+    border-right: 1px solid #a6a6a6;
+
+    background: white;
+
+    width: 1100px;
+    /*min-width: 900px;*/
+    height: 100%;
+}
+.inner{
+    margin: auto;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 50px; 
+    width: 1100px;
+}
+.pdf{
+    margin: 0px auto;
 }
