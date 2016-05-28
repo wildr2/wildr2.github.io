@@ -2,11 +2,15 @@ body {
     margin: 60px auto;
     width: 70%;
 }
+.pdf{
+    margin: 0px auto;
+}
+
+
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    /*font-family:'Helvetica', 'Arial', 'Sans-Serif';*/
     padding: 0px;
     list-style: none;
-    font-weight: bold;
 }
 nav ul li, footer ul li {
     display: inline;
@@ -15,9 +19,11 @@ nav ul li, footer ul li {
 a {
     text-decoration: none;
     color: #999;
+    font-style: italic;
 }
 a:hover {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    color: #333;
 }
 h1 {
     font-size: 3em;
@@ -28,9 +34,24 @@ p {
     line-height: 1.4em;
     color: #333;
 }
+nav {
+    /*border-bottom: 1px solid #d5d5d5;*/
+    font-size: 1.5em;
+}
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+}
+
+.border{
+    content:'';
+    padding-bottom: 5px;
+    margin-bottom: 150px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.blurb .accent{
+    color: #C9244B;
 }
 
 ul.posts { 
