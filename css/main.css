@@ -51,6 +51,9 @@ p {
     line-height: 1.4em;
     color: #333;
 }
+p.bigtext{
+    font-size: 1.35em;
+}
 nav {
     font-size: 1.25em;
 }
@@ -58,6 +61,7 @@ nav {
 .accent{
     /*color: #a51537;*/
     font-weight: bold;
+    /*text-decoration: underline;*/
 }
 
 .block{
