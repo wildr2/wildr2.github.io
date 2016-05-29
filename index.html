@@ -7,7 +7,16 @@
 	</head>
 	<body>
 		<header>
-			<h1 style="color:white;">Robert Wild_</h1>
+			<h1 id="headerName" style="color:white;">Robert Wild</h1>
+			    <script type="text/javascript">
+			    var flag = false;
+			    var elem = document.getElementById("headerName");
+			    setInterval(blink, 520);
+			    function blink() {
+			     elem.innerHTML = flag ? "Robert Wild_" : "Robert Wild";
+			        flag = !flag;
+			    }
+			    </script>
 		</header>
 		<div class="block">
 			<div class="page">

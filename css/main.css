@@ -87,6 +87,8 @@ article img.title{
 header{
     border-bottom: 1px solid #a6a6a6;
     width: 100%;
+    padding-top: 6px;
+    padding-bottom: 6px;
     background: #685c50;
 }
 header h1{
