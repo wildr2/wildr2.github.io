@@ -142,5 +142,5 @@ img.outlined{
 
 .cogspage{
     background-image: url("data/cogs.PNG");
-    /*background-repeat: repeat-y;*/
+    background-repeat: repeat-y;
 }
