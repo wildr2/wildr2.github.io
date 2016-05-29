@@ -82,6 +82,8 @@ nav {
     width: 960px;
     max-width: 95%;
     height: 100%;
+
+    overflow: hidden;
 }
 
 article img.title{
@@ -136,4 +138,9 @@ img.outlined{
 }
 .pdf{
     margin: 0px auto;
+}
+
+.cogspage{
+    background-image: url("data/cogs.PNG");
+    /*background-repeat: repeat-y;*/
 }

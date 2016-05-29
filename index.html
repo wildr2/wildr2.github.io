@@ -2,38 +2,39 @@
 <html>
 	<head>
 		<title>Robert Wild</title>
-    <!-- link to main stylesheet -->
+		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
 		<header>
 			<h1 id="headerName" style="color:white;">Robert Wild</h1>
-			    <script type="text/javascript">
-			    var flag = false;
-			    var elem = document.getElementById("headerName");
-			    setInterval(blink, 520);
-			    function blink() {
-			     elem.innerHTML = flag ? "Robert Wild_" : "Robert Wild";
-			        flag = !flag;
-			    }
-			    </script>
+				<script type="text/javascript">
+					var flag = false;
+					var elem = document.getElementById("headerName");
+					setInterval(blink, 520);
+					function blink() {
+					 elem.innerHTML = flag ? "Robert Wild_" : "Robert Wild";
+						flag = !flag;
+					}
+				</script>
 		</header>
 		<div class="block">
-			<div class="page">
-				<article>
+			<div class="page" style="background-image: url('data/cogs.PNG'); background-repeat: repeat-y; background-position: right top;">
+				<!-- <img id="cogsimg" src="data/cogs.PNG" style="width:250px;">	 -->
+				<article>	
 					<p class="bigtext">>&nbsp;&nbsp;<span class="accent">Software</span> Engineer<br>
 						   >&nbsp;&nbsp;<span class="accent">Game Development</span> Enthusiast<br>
 						   >&nbsp;&nbsp;<span class="accent">Computer Science + Cognitive Science</span> Student at RPI<br>
 						   &nbsp;
 					</p>
-		    		<nav>
-			    		<ul>
-			        		<li><a href="resume.html">Resume</a></li>
-			        		<li><a href="https://github.com/wildr2">GitHub</a></li>
-			        		<li><a href="https://www.linkedin.com/in/wildrob">LinkedIn</a></li>
-			        		<li><a href="mailto:wildr2@rpi.edu">Email</a></li>
-			    		</ul>
-					</nav>	
+					<nav>
+						<ul>
+							<li><a href="resume.html">Resume</a></li>
+							<li><a href="https://github.com/wildr2">GitHub</a></li>
+							<li><a href="https://www.linkedin.com/in/wildrob">LinkedIn</a></li>
+							<li><a href="mailto:wildr2@rpi.edu">Email</a></li>
+						</ul>
+					</nav>
 				</article>
 			</div>
 		</div>
@@ -41,20 +42,22 @@
 			<div class="page">
 				<article>
 					<img class="title" src="data/rainbreak_title.PNG" alt="Rain / Break Title" style="width:300px;">
-		    		<div class="blurb">
+					<div class="blurb">
 						<p>A real time competitive floating castle artillery strategy game!</p>
-		    		</div>
-		    		<nav>
-			    		<ul>
-			        		<li><a href="data/RainBreakWebGL/index.html">Play the alpha version here</a></li>
-			    		</ul>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="data/RainBreakWebGL/index.html">Play the alpha version here</a></li>
+						</ul>
 					</nav>
 					<img class="outlined" src="data/rainbreak_1.PNG" alt="Rain / Break ScreenShot" style="width:800px;">
 				</article>
 			</div>
 		</div>
 		<footer>
-			<p align="right">&copy; 2016 Robert Wild</p>
-		</div>
+			<p align="right">
+				&copy; 2016 Robert Wild
+			</p>
+		</footer>
 	</body>
 </html>
