@@ -104,3 +104,10 @@ footer {
 .pdf{
     margin: 0px auto;
 }
+
+.outlined{
+    border-left: 1px solid #a6a6a6;
+    border-right: 1px solid #a6a6a6;
+    border-top: 1px solid #a6a6a6;
+    border-bottom: 1px solid #a6a6a6;
+}
