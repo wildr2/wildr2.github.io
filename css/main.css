@@ -69,6 +69,7 @@ nav {
     border-bottom: 1px solid #a6a6a6;
     width: 100%;
     background: #fAfAfA;
+    overflow: hidden;
 }
 .page{
     margin: auto;
@@ -93,13 +94,12 @@ article img.title{
 header{
     border-bottom: 1px solid #a6a6a6;
     width: 100%;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 3px;
+    height: 47px;
     background: #685c50;
 }
 header h1{
-    margin: auto;
-    padding-left: 0px; 
+    margin: auto; 
     width: 960px;
     max-width: 95%;
 }
@@ -108,7 +108,7 @@ footer {
     width: 100%;
     background: white;
     height: 200px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 footer p{
     margin: auto;
