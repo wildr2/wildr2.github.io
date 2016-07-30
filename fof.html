@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | FlockofForts</title>
+    <link rel="stylesheet" type="text/css" href="css/unitywebgl.css">
+  </head>
+  <body>
+    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="720px" width="1280px"></canvas>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,     // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "data/fof_webgl/Release/fof_webgl.data",
+    codeUrl: "data/fof_webgl/Release/fof_webgl.js",
+    memUrl: "data/fof_webgl/Release/fof_webgl.mem",
+  };
+</script>
+<script src="data/fof_webgl/Release/UnityLoader.js"></script>
+
+  </body>
+</html>
