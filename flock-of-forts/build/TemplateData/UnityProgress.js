@@ -1,8 +1,3 @@
-function init()
-{
-    
-}
-
 function UnityProgress (dom) 
 {
   this.progress = 0.0;
@@ -10,9 +5,6 @@ function UnityProgress (dom)
   this.dom = dom;
   var parent = dom.parentNode;
 
-  createjs.CSSPlugin.install(createjs.Tween);
-  createjs.Ticker.setFPS(60);
-  
 
   this.SetProgress = function (progress)
   { 
@@ -39,20 +31,8 @@ function UnityProgress (dom)
     {
       this.message = "Preparing to load...";
     }
-    else if (this.progress > 0.9)
-    {
-      // Show 'preparing' instead of 'running'
-      document.getElementById("progressFrame").style.display = "none";
-      document.getElementById("progressBar").style.display = "none";
-      this.message = "Preparing...";
-    }
 
-
-    var length = 200 * Math.min(this.progress, 1);
-    bar = document.getElementById("progressBar")
-    createjs.Tween.removeTweens(bar);
-    createjs.Tween.get(bar).to({width: length}, 500, createjs.Ease.sineOut);
-
+    document.getElementById("progressBar").style.width = 200 * Math.min(this.progress, 1) + "px";
     document.getElementById("loadingText").innerHTML = this.message + "<br> Please be patient";
   }
 
