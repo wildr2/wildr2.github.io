@@ -23,16 +23,12 @@ function UnityProgress (dom) {
 	parent.appendChild(progressBar);
 	this.progressBar = progressBar;
 
-	var messageArea = document.createElement("p");
-	messageArea.style.position = "absolute";
-	parent.appendChild(messageArea);
-	this.messageArea = messageArea;
+	this.loadingText = document.getElementById("loadingText");
 
 
 	this.SetProgress = function (progress) { 
 		if (this.progress < progress)
 			this.progress = progress; 
-		this.messageArea.style.display = "none";
 		this.progressFrame.style.display = "inline";
 		this.progressBar.style.display = "inline";			
 		this.Update();
@@ -50,6 +46,7 @@ function UnityProgress (dom) {
 		this.background.style.display = "none";
 		this.progressFrame.style.display = "none";
 		this.progressBar.style.display = "none";
+		this.loadingText.style.display = "none";
 	}
 
 	this.Update = function() {
@@ -71,11 +68,7 @@ function UnityProgress (dom) {
 		this.progressBar.width = progressFrameImg.width * Math.min(this.progress, 1);
 		this.progressBar.height = progressFrameImg.height;
 
-		this.messageArea.style.top = this.progressFrame.style.top;
-		this.messageArea.style.left = 0;
-		this.messageArea.style.width = '100%';
-		this.messageArea.style.textAlign = 'center';
-		this.messageArea.innerHTML = this.message;
+		this.loadingText.innerHTML = this.message;
 	}
 
 	this.Update ();

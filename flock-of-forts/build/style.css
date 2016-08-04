@@ -27,3 +27,26 @@ div.title { height: 38px; line-height: 38px; padding: 0 10px; margin: 0 1px 0 0;
 body.template { }
 .template .template-wrap { }
 .template .template-wrap canvas { }
+
+
+
+div#loadingBox {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: 8px;
+  text-align: center;
+  z-index: 100;
+}
+
+p#loadingText {
+  color: white;
+  letter-spacing: 1px;
+  position: absolute;
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 10px;
+}
