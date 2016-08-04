@@ -65,7 +65,7 @@ img {
     max-width: 100%;
 }
 .logo {
-    letter-spacing: 2px;
+    letter-spacing: -1px;
     margin: auto; 
     width: 960px;
     max-width: 95%;
