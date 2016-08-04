@@ -19,18 +19,12 @@ function UnityProgress (dom)
     if (this.progress < progress)
       this.progress = progress; 
 
-    if (progress == 1) 
-    {
-      this.SetMessage("Preparing...");
-      document.getElementById("progressFrame").style.display = "none";
-      document.getElementById("progressBar").style.display = "none";
-    } 
     this.Update();
   }
 
   this.SetMessage = function (message) 
   { 
-    this.message = message; 
+    this.message = message;
     this.Update();
   }
 
@@ -41,6 +35,19 @@ function UnityProgress (dom)
 
   this.Update = function() 
   {
+    if (this.progress == 0) 
+    {
+      this.message = "Preparing to load...";
+    }
+    else if (this.progress > 0.9)
+    {
+      // Show 'preparing' instead of 'running'
+      document.getElementById("progressFrame").style.display = "none";
+      document.getElementById("progressBar").style.display = "none";
+      this.message = "Preparing...";
+    }
+
+
     var length = 200 * Math.min(this.progress, 1);
     bar = document.getElementById("progressBar")
     createjs.Tween.removeTweens(bar);
