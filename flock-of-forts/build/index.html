@@ -9,22 +9,27 @@
   </head>
   <body>
     <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="720px" width="1280px"></canvas>
+    
     <div id="loadingBox">
       <div id="progressFrame"></div>
       <div id="progressBar"></div>
       <p id="loadingText">Loading...</p>
     </div>
+    
     <script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 268435456,
-    errorhandler: null,     // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-    compatibilitycheck: null,
-    dataUrl: "Release/build.data",
-    codeUrl: "Release/build.js",
-    memUrl: "Release/build.mem",
-  };
-</script>
-<script src="Release/UnityLoader.js"></script>
+    var Module = {
+      TOTAL_MEMORY: 268435456,
+      errorhandler: null,     // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+      compatibilitycheck: null,
+      dataUrl: "Release/build.data",
+      codeUrl: "Release/build.js",
+      memUrl: "Release/build.mem",
+    };
+    </script>
+
+    <script type="text/javascript" src="https://code.createjs.com/tweenjs-0.6.2.min.js"></script>
+    <script type="text/javascript" src="TemplateData/TweenJS/CSSPlugin.js"></script>
+    <script src="Release/UnityLoader.js"></script>
 
   </body>
 </html>

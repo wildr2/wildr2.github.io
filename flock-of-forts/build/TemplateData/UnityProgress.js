@@ -1,9 +1,17 @@
+function init()
+{
+    
+}
+
 function UnityProgress (dom) 
 {
   this.progress = 0.0;
   this.message = "";
   this.dom = dom;
   var parent = dom.parentNode;
+
+  createjs.CSSPlugin.install(createjs.Tween);
+  createjs.Ticker.setFPS(60);
   
 
   this.SetProgress = function (progress)
@@ -35,7 +43,9 @@ function UnityProgress (dom)
   {
     var length = 200 * Math.min(this.progress, 1);
     bar = document.getElementById("progressBar")
-    bar.style.width = length + "px";
+    createjs.Tween.removeTweens(bar);
+    createjs.Tween.get(bar).to({width: length}, 500, createjs.Ease.sineOut);
+
     document.getElementById("loadingText").innerHTML = this.message + "<br> Please be patient";
   }
 
