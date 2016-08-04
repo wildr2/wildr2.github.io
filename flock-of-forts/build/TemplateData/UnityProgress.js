@@ -29,7 +29,7 @@ function UnityProgress (dom)
   {
     if (this.progress == 0) 
     {
-      this.message = "Preparing to load...";
+      this.message = "Loading...";
     }
 
     document.getElementById("progressBar").style.width = 200 * Math.min(this.progress, 1) + "px";
