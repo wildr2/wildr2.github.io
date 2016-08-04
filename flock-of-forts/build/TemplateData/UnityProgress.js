@@ -68,7 +68,7 @@ function UnityProgress (dom) {
 		this.progressBar.width = progressFrameImg.width * Math.min(this.progress, 1);
 		this.progressBar.height = progressFrameImg.height;
 
-		this.loadingText.innerHTML = this.message;
+		this.loadingText.innerHTML = this.message  + "<br> please be patient";
 	}
 
 	this.Update ();
