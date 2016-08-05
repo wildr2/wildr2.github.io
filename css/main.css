@@ -103,19 +103,18 @@ article img {
 .pdf {
     margin: 0px auto;
 }
-
-
-
-#bioBackground {
-    margin: auto;
-    width: 960px;
-    overflow: hidden;
-}
-#bioSection {
+.innerSection {
     margin: auto;
     padding: 1px;
     width: 960px;
     max-width: 95%;
     height: 100%;
+    overflow: hidden;
+}
+
+
+#bioBackground {
+    margin: auto;
+    width: 960px;
     overflow: hidden;
 }
