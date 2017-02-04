@@ -1,7 +1,17 @@
+:root{
+    --bg-color1: #fff;
+    --bg-color1-dark: #000;
+    --bg-color2: #fbfbfb;
+    --edge-color: #d9d9d9;
+    --edge-color-dark: #555;
+    --text-color: #333;
+    --link-color: #a6a6a6;
+    --link-color-hover: #333;
+}
+
 body {
     margin: 0 !important;
     padding: 0 !important;
-    /*margin: 60px auto;*/
     margin-top: 0px;
     width: 100%;
 }
@@ -18,29 +28,29 @@ a {
     font-family:'Arial', 'Arial', 'Sans-Serif';
     font-size: 1.1em;
     text-decoration: none;
-    color: #a6a6a6;
+    color: var(--link-color);
     font-style: italic;
 }
 a:hover {
-    color: #333;
+    color: var(--link-color-hover);
 }
 p {
     font-family:'Arial', 'Arial', 'Sans-Serif';
     font-size: 1.1em;
     line-height: 1.4em;
-    color: #333;
+    color: var(--text-color);
 }
 header {
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid var(--edge-color);
     width: 100%;
-    padding-top: 8px;
-    height: 44px;
-    background: white;
+    padding-top: 10px;
+    height: 40px;
+    background: var(--bg-color1);
 }
 footer {
     margin: auto;
     width: 100%;
-    background: white;
+    background: var(--bg-color2);
     height: 200px;
     padding-top: 10px;
 }
@@ -49,7 +59,7 @@ footer p {
     width: 960px;
     max-width: 95%;
     font-size: 0.9em;
-    color: #a6a6a6;
+    color: var(--link-color);
 }
 article {
     margin-top: 40px;
@@ -67,16 +77,15 @@ article img {
     margin: auto; 
     width: 960px;
     max-width: 100%;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family:'Arial';
     text-align: center;
     font-weight: 100;
-    color: #333;
     text-decoration: none;
     font-style: normal;
 }
 .logo a {
-    color: #333;
+    color: var(--edge-color);
     text-decoration: none;
     font-style: normal;
 }
@@ -85,20 +94,19 @@ article img {
 }
 .accent {
     font-weight: bold;
-    /*font-size: 1.3em;*/
 }
 .block {
     padding-bottom: 0px;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid var(--edge-color);
     width: 100%;
-    background: #f7f7f7;
+    background: var(--bg-color1);
     overflow: hidden;
 }
 .outlined {
-    border-left: 1px solid #d9d9d9;
-    border-right: 1px solid #d9d9d9;
-    border-top: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9;
+    border-left: 1px solid var(--edge-color);
+    border-right: 1px solid var(--edge-color);
+    border-top: 1px solid var(--edge-color);
+    border-bottom: 1px solid var(--edge-color);
 }
 .pdf {
     margin: 0px auto;
