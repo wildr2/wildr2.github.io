@@ -1,74 +1,125 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Robert Wild</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="icon" href="http://wildrobert.com/favicon.ico">
 
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Robert Wild | Home</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" href="http://wildrobert.com/favicon.ico">
 
-		  ga('create', 'UA-87594416-1', 'auto');
-		  ga('send', 'pageview');
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		</script>
-	</head>
-	<body>
-		<header>
-			<h1 class="logo"><a href=""> Robert Wild</a></h1>
-		</header>
-		<div class="block" style="background: var(--bg-color2)">
-			<div id="bioBackground" style="max-width: 960px; background-image: url('images/cogs.png');background-repeat: repeat-y; background-position: right;">
-				<div class="innerSection" style="">
-					<article>	
-						<p>>&nbsp;&nbsp;<span class="accent">Software</span> Engineer<br>
-							   >&nbsp;&nbsp;<span class="accent">Game Development</span> Enthusiast<br>
-							   >&nbsp;&nbsp;<span class="accent">Computer Science + Cognitive Science</span> Student at RPI<br>
-							   &nbsp;
-						</p>
-						<nav>
-							<ul>
-								<li><a href="resume/">Resume</a></li>
-								<li><a href="https://github.com/wildr2">GitHub</a></li>
-								<li><a href="https://www.linkedin.com/in/wildrob">LinkedIn</a></li>
-								<li><a href="mailto:wildr2@rpi.edu">Email</a></li>
-							</ul>
-						</nav>
-					</article>
-				</div>
-			</div>
-		</div>
-		<div class="block">
-			<article>
-				<p style="text-align: center">
-					<img class="title" src="images/jettag_title2.png" alt="JetTag Title" style="width:250px;">
-					<br><br> Competitive juking <br> Rensselaer Game Showcase 2016   <br><br>
-					<img class = "outlined" src="images/jettag_screenshot2.png" alt="FOF ScreenShot" style="width:800px; max-width:49%">
-					<img class = "outlined" src="images/jettag_screenshot1.png" alt="FOF ScreenShot" style="width:800px; max-width:49%">
-					<br><br>
-					<a href="jet-tag/"> PLAY IT</a>
-				</p>
-			</article>
-		</div>
-		<div class="block">
-			<article>
-				<p style="text-align: center">
-					<img class="title" src="images/fof_title.png" alt="Flock of Forts Title" style="width:400px;">
-					<br><br> A floating castle artillery strategy game! <br><br>
-					<img class = "outlined" src="images/fof_screenshot.png" alt="FOF ScreenShot" style="width:1000px;">
-					<br><br>
-					<a href="flock-of-forts/">PLAY IT</a>
-				</p>
-			</article>
-		</div>
-		<footer>
-			<p align="right">
-				&copy; 2017 Robert Wild
-			</p>
-		</footer>
-	</body>
+        ga('create', 'UA-87594416-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body class="page page--home">
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="site-header__logo"
+                href="index.html">
+                Robert Wild
+            </a>
+        </div>
+    </header>
+    <article class="article">
+        <header class="intro">
+            <div class="intro__inner">
+                <p>
+                Software Engineer<br>
+                Game Development Enthusiast<br>
+                Computer Science + Cognitive Science Student at RPI<br></p>
+
+                <nav class="intro__nav">
+                    <ul class="intro__nav-ul">
+                        <li class="intro__nav-li">
+                            <a class="intro__link"
+                            href="resume/">Resume</a>
+                        </li>
+                        <li class="intro__nav-li">
+                            <a class="intro__link"
+                            href="https://github.com/wildr2">
+                            GitHub</a>
+                        </li>
+                        <li class="intro__nav-li">
+                            <a class="intro__link"
+                            href="https://www.linkedin.com/in/wildrob">
+                            LinkedIn</a>
+                        </li>
+                        <li class="intro__nav-li">
+                            <a class="intro__link"
+                            href="mailto:wildr2@rpi.edu">
+                            Email</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Stormy Sea -->
+        <a class="card"
+            href="http://globalgamejam.org/2017/games/stormy-sea">
+            <div class="card__inner">
+                <img class="card__img" src="images/stormy-sea-screen1.png" 
+                    alt="Stormy Sea ScreenShot" width="400px" height="225px">
+                <div class="card__body">
+                    <h1 class="card__heading">Stormy Sea<br><br></h1>
+                    <p>
+                        Global Game Jam 2017<br>
+                        Voted "Best Overall Game" at the Albany IGDA meet<br><br>
+                        <div class="card__link-txt"> 
+                            Check it out at globalgamejam.org
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <!-- Jet Tag -->
+        <a class="card"
+            href="jet-tag/">
+            <div class="card__inner">
+                <img class="card__img" src="images/jettag-screenshot2.png" 
+                    alt="Jet Tag ScreenShot" width="400px" height="225px">
+                <div class="card__body">
+                    <h1 class="card__heading">Jet Tag<br><br></h1>
+                    <p>
+                        Competitive juking<br>
+                        Rensselaer Game Showcase Fall 2016<br><br>
+                        <div class="card__link-txt"> 
+                            Play in browser
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <!-- Flock of Forts -->
+        <a class="card"
+            href="flock-of-forts/">
+            <div class="card__inner">
+                <img class="card__img" src="images/fof-screenshot.png" 
+                    alt="FOF ScreenShot" width="400px" height="225px">
+                <div class="card__body">
+                    <h1 class="card__heading">Flock of Forts<br><br></h1>
+                    <p>
+                        A floating castle artillery strategy game!<br><br>
+                        <div class="card__link-txt"> 
+                            Play in browser
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </article>
+    <footer class="footer">
+        <div class="footer__inner">
+            <p>&copy; 2017 Robert Wild</p>
+        </div>
+    </footer>
+</body>
 </html>
