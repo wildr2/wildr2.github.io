@@ -286,6 +286,10 @@ html {
 .article--unity {
     background-color: var(--color-site-header-dark);
 }
+.article--cards {
+    box-sizing: border-box;
+    padding-bottom: 50px;
+}
 
 /* footer */
 .footer--dark {
