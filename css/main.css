@@ -230,6 +230,13 @@ html {
     border-bottom: 1px solid var(--color-separator);
     box-sizing: border-box;
 }
+.card__video {
+    display: block;
+    margin: 0px;
+    max-width: 100%;
+    border-bottom: 1px solid var(--color-separator);
+    box-sizing: border-box;
+}
 .card__body {
     padding: 20px 20px 20px 20px;
 }
