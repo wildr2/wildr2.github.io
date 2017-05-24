@@ -269,6 +269,7 @@ html {
     max-width: 100%;
     margin: auto;
     text-align: left;
+    padding: 0px 10px 0px 10px;
 }
 .article__heading {
     padding-top: 30px;
@@ -352,4 +353,8 @@ html {
 /*  05 Misc
 /*---------------------------------------------------------------------------*/
 
-
+/* preloading */
+body:after{
+ display:none;
+ content: url(images/chord-board-gif1.gif);
+}
