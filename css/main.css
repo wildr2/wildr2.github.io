@@ -287,11 +287,30 @@ html {
     border: 1px solid var(--color-separator);
     box-sizing: border-box;
 }
+.video-wrapper {
+  position: relative;
+  width: 640px;
+  max-width: 100%;
+}
+.video-wrapper__16by9 {
+  position: relative;
+  /*width: 640px;
+  max-width: 100%;*/
+  padding-bottom: 56.25%;
+}
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
 .article__link {
     display: inline-block; 
     color: var(--color-link);
     text-decoration: none;
     font-style: italic;
+    word-break: break-all;
 }
 .article__link:hover {
     color: var(--color-link-hover);
