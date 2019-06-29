@@ -14,7 +14,7 @@
 /*  01 Reset
 /*---------------------------------------------------------------------------*/
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -28,8 +28,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -40,7 +40,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -76,10 +76,13 @@ table {
     --color-bg: #fafafa;
     --color-separator: #ccc;
     --color-text: #444;
+    --color-text-dark: #fff;
     --color-link: #a6a6a6;
     --color-link-hover: #583ef4;
+    --color-link-dark: #fff;
 
-    --color-card-bg: #fff;
+    --color-card-bg: #000000db;
+    --color-card-border: #000;
     --color-card-shadow: #bbb;
 
     --color-footer: #616161;
@@ -109,6 +112,8 @@ html {
     font-size: 1.1em;
     line-height: 1.3em;
     font-weight: normal;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .site-header {
     background-color: var(--color-site-header);
@@ -184,7 +189,7 @@ html {
     transition: transform .1s ease-in;
 }
 .site-header__logo:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.05, 1.05);
 }
 
 /* intro */
@@ -204,9 +209,9 @@ html {
     float: left;
 }
 .intro__link {
-    display: block; 
+    display: block;
     padding: 10px 15px 10px 15px;
-    color: var(--color-link);
+    color: var(--color-link-dark);
     text-decoration: none;
     font-style: italic;
 }
@@ -218,7 +223,7 @@ html {
 .card__inner {
     transition: transform .1s linear;
     background-color: var(--color-card-bg);
-    box-shadow: 5px 5px 20px var(--color-card-shadow);
+    border: 5px solid var(--color-card-border);
 }
 .card:hover .card__inner {
     transform: translate(0px, -10px);
@@ -228,7 +233,6 @@ html {
     margin: 0px;
     max-width: 100%;
     height: auto;
-    border-bottom: 1px solid var(--color-separator);
     box-sizing: border-box;
 }
 .card__video {
@@ -306,7 +310,7 @@ html {
 
 
 .article__link {
-    display: inline-block; 
+    display: inline-block;
     color: var(--color-link);
     text-decoration: none;
     font-style: italic;
@@ -336,6 +340,11 @@ html {
 /*---------------------------------------------------------------------------*/
 /*  04 Modifiers
 /*---------------------------------------------------------------------------*/
+
+/* page */
+.page--dark {
+    color: var(--color-text-dark);
+}
 
 /* site-header */
 .site-header--dark {
