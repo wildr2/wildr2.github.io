@@ -69,23 +69,24 @@ table {
 /*---------------------------------------------------------------------------*/
 
 :root{
-    --color-site-header: #616161;
+    --color-site-header: #000;
     --color-site-header-dark: #000;
     --color-logo: #fff;
 
     --color-bg: #fafafa;
+    --color-bg-dark: #000;
     --color-separator: #ccc;
     --color-text: #444;
     --color-text-dark: #fff;
     --color-link: #a6a6a6;
-    --color-link-hover: #583ef4;
     --color-link-dark: #fff;
+    --color-link-hover: #fc0e79;
 
-    --color-card-bg: #000000db;
+    --color-card-bg: #000;
     --color-card-border: #000;
     --color-card-shadow: #bbb;
 
-    --color-footer: #616161;
+    --color-footer: #000;
     --color-footer-dark: #000;
     --color-footer-text: #fff;
 
@@ -128,8 +129,6 @@ html {
     padding: 0px 10px 0px 10px;
 }
 .intro {
-    padding: 40px 10px 40px 10px;
-    text-align: left;
 }
 .card {
     display: inline-block;
@@ -137,9 +136,10 @@ html {
     max-width: calc(100% - 20px);
     margin: 10px;
     vertical-align: top;
-    text-align: left;
+    text-align: center;
     text-decoration: inherit;
     color: inherit;
+    border-radius: 67% 77% 88% 71% / 66% 83% 62% 72%;
 }
 .pdf-content {
     display: block;
@@ -179,25 +179,15 @@ html {
     line-height: var(--site-header-height);
     padding: 0px 0px 0px 50px;
     margin: auto;
-    background-image: url(../images/logo.png);
+    background-image: url(../images/logo3.png);
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 40px 40px;
     color: var(--color-logo);
     text-decoration: none;
-
-    transition: transform .1s ease-in;
-}
-.site-header__logo:hover {
-    transform: scale(1.05, 1.05);
 }
 
 /* intro */
-.intro__inner {
-    margin: auto;
-    width: var(--inner-width);
-    max-width: 100%;
-}
 .intro__nav {
     margin-top: 20px;
     display: inline-block;
@@ -210,10 +200,9 @@ html {
 }
 .intro__link {
     display: block;
-    padding: 10px 15px 10px 15px;
+    margin: 2px 8px 2px 8px;
     color: var(--color-link-dark);
-    text-decoration: none;
-    font-style: italic;
+    text-decoration: underline;
 }
 .intro__link:hover {
     color: var(--color-link-hover);
@@ -221,18 +210,22 @@ html {
 
 /* card */
 .card__inner {
-    transition: transform .1s linear;
+    transition: transform 0s linear;
     background-color: var(--color-card-bg);
-    border: 5px solid var(--color-card-border);
+    border: 1px solid #fff;
+    border-radius: 67% 77% 88% 71% / 66% 83% 62% 72%;
+    overflow: hidden;
 }
 .card:hover .card__inner {
     transform: translate(0px, -10px);
+    /* border: 1px solid #fff; */
 }
 .card__img {
     display: block;
-    margin: 0px;
+    width: 400px;
+    height: 225px;
     max-width: 100%;
-    height: auto;
+    margin: 0px;
     box-sizing: border-box;
 }
 .card__video {
@@ -243,26 +236,13 @@ html {
     box-sizing: border-box;
 }
 .card__body {
-    padding: 20px 20px 20px 20px;
-}
-.card__heading {
-    font-weight: bold;
-}
-.card__link-txt {
-    color: var(--color-link);
-    text-decoration: none;
-    font-style: italic;
-    /*transition:color .2s ease-out, background 1s ease-in;*/
-}
-.card:hover .card__link-txt {
-    color: var(--color-link-hover);
+    padding: 20px 30px 80px 30px;
 }
 
 /* pdf-content */
 .pdf-content__link {
     color: var(--color-link);
-    text-decoration: none;
-    font-style: italic;
+    text-decoration: underline;
 }
 .pdf-content__link:hover {
     color: var(--color-link-hover);
@@ -308,13 +288,11 @@ html {
   height: 100%;
 }
 
-
 .article__link {
     display: inline-block;
     color: var(--color-link);
-    text-decoration: none;
-    font-style: italic;
     word-break: break-all;
+    text-decoration: underline;
 }
 .article__link:hover {
     color: var(--color-link-hover);
@@ -343,6 +321,7 @@ html {
 
 /* page */
 .page--dark {
+    background-color: var(--color-bg-dark);
     color: var(--color-text-dark);
 }
 
@@ -359,6 +338,7 @@ html {
 .article--cards {
     box-sizing: border-box;
     padding: 0px 0px 50px 0px;
+    margin-top:50px;
 }
 
 /* footer */
@@ -368,15 +348,51 @@ html {
 }
 
 /* card */
-.card--med {
-    width: 500px;
-    /*max-width: 500px;
-    min-width: 400px*/
+.card--me .card__inner {
+    border: none;
 }
-.card--big {
-    width: 640px;
+.card--me:hover .card__inner {
+    transform: none;
 }
-
+.card--kayak .card__img {
+    content: url(../images/kayak1.png);
+}
+.card--kayak:hover .card__img {
+    content: url(../images/kayak-gif1.gif);
+}
+.card--flash .card__img {
+    content: url(../images/flash-screen2.png);
+}
+.card--chord-board .card__img {
+    content: url(../images/chord-board-screen1.png);
+}
+.card--chord-board:hover .card__img {
+    content: url(../images/chord-board-gif1.gif);
+}
+.card--stormy-sea .card__img {
+    content: url(../images/stormy-sea-screen1.png);
+}
+.card--stormy-sea:hover .card__img {
+    content: url(../images/stormy-sea-gif1.gif);
+}
+.card--jet-tag .card__img {
+    content: url(../images/jettag-screen2.png);
+}
+.card--jet-tag:hover .card__img {
+    content: url(../images/jettag-gif1.gif);
+}
+.card--flock-of-forts .card__img {
+    content: url(../images/fof-screen1.png);
+}
+.card--flock-of-forts:hover .card__img {
+    content: url(../images/fof-gif1.gif);
+}
+.card--false-time .card__img {
+    content: url(../images/false-time-screen1.png);
+}
+.card--false-time:hover .card__img {
+    content: url(../images/false-time-gif1.gif);
+}
 
 
 /*---------------------------------------------------------------------------*/
@@ -384,7 +400,14 @@ html {
 /*---------------------------------------------------------------------------*/
 
 /* preloading */
-/*body:after{
- display:none;
- content: url(images/chord-board-gif1.gif);
-}*/
+body:after {
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:
+        url(../images/kayak-gif1.gif)
+        url(../images/flash-gif1.gif)
+        url(../images/chord-board-gif1.gif)
+        url(../images/stormy-sea-gif1.gif)
+        url(../images/jettag-gif1.gif)
+        url(../images/fof-gif1.gif)
+        url(../images/false-time-gif1.gif);
+}
