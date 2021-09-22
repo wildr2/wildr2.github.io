@@ -8,6 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" href="http://wildrobert.com/favicon.ico">
+    <link rel="preload" href="images/kayak-gif1.gif", as="image">
+    <link rel="preload" href="images/chord-board-gif1.gif", as="image">
+    <link rel="preload" href="images/stormy-sea-gif1.gif", as="image">
+    <link rel="preload" href="images/jettag-gif1.gif", as="image">
+    <link rel="preload" href="images/fof-gif1.gif", as="image">
+    <link rel="preload" href="images/false-time-gif1.gif" as="image">
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -19,110 +25,115 @@
         ga('send', 'pageview');
     </script>
 </head>
-<body class="page page--dark" style="background-image: url(images/kayak1.png);">
+<body class="page page--dark">
     <header class="site-header site-header--dark">
         <div class="site-header__inner">
             <a class="site-header__logo"
-                href="/">
-                Robert Wild
-            </a>
+            href="/">Robert Wild</a>
         </div>
     </header>
     <article class="article article--cards">
-        <header class="intro">
-            <div class="intro__inner">
-                <p>
-                    Motivated computer science and cognitive science graduate with<br>
-                    a passion for developing unconventional games and<br>
-                    experimental media.
-                </p>
-                <nav class="intro__nav">
-                    <ul class="intro__nav-ul">
-                        <li class="intro__nav-li">
-                            <a class="intro__link"
-                            href="resume/">Resume</a>
-                        </li>
-                        <li class="intro__nav-li">
-                            <a class="intro__link"
-                            href="https://github.com/wildr2">
-                            GitHub</a>
-                        </li>
-                        <li class="intro__nav-li">
-                            <a class="intro__link"
-                            href="https://www.linkedin.com/in/wildrob">
-                            LinkedIn</a>
-                        </li>
-                        <li class="intro__nav-li">
-                            <a class="intro__link"
-                            href="mailto:wildrobertg@gmail.com">
-                            Email</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- Chord Board -->
-        <a class="card"
-            href="about-chord-board/"
-            onmouseover="this.children[0].children[0].src='images/chord-board-gif1.gif'"
-            onmouseout="this.children[0].children[0].src='images/chord-board-screen1.png'">
+        <!-- Me -->
+        <div class="card card--me" href="about-me/">
             <div class="card__inner">
-                <img class="card__img" src="images/chord-board-screen1.png"
-                    alt="Stormy Sea ScreenShot" width="400px" height="225px">
-                <div class="card__body">
-                    <h1 class="card__heading">Chord Board<br><br></h1>
+                <!-- <img class="card__img" width="400px" height="225px"> -->
+                <div class="card__body intro" style="padding: 50px 30px 70px 30px;">
                     <p>
-                        An experimental VR musical instrument
+                        <span style="font-weight:bold;">Hello!</span><br><br>
+                        I'm a game developer and programmer with a passion for
+                        unconventional games and experimental media.
+                        Giving some personal projects a bit of daylight ➝
+                    </p>
+                    <nav class="intro__nav">
+                        <ul class="intro__nav-ul">
+                            <li class="intro__nav-li">
+                                <a class="intro__link"
+                                href="resume/">
+                                Resume</a>
+                            </li>
+                            <li class="intro__nav-li">
+                                <a class="intro__link"
+                                href="https://github.com/wildr2">
+                                GitHub</a>
+                            </li>
+                            <li class="intro__nav-li">
+                                <a class="intro__link"
+                                href="https://www.linkedin.com/in/wildrob">
+                                LinkedIn</a>
+                            </li>
+                            <li class="intro__nav-li">
+                                <a class="intro__link"
+                                href="mailto:wildrobertg@gmail.com">
+                                Email</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Kayak -->
+        <a class="card card--kayak">
+            <div class="card__inner">
+                <div class="card__img"></div>
+                <div class="card__body">
+                    <p>
+                        Imagine flying a kayak over rolling hills
+                    </p>
+                </div>
+            </div>
+        </a>
+        <!-- Chord Board -->
+        <a class="card card--chord-board" href="about-chord-board/">
+            <div class="card__inner">
+                <div class="card__img"></div>
+                <div class="card__body">
+                    <p>
+                        A VR musical instrument ♫
                     </p>
                 </div>
             </div>
         </a>
         <!-- Stormy Sea -->
-        <a class="card"
-            href="about-stormy-sea/"
-            onmouseover="this.children[0].children[0].src='images/stormy-sea-gif1.gif'"
-            onmouseout="this.children[0].children[0].src='images/stormy-sea-screen1.png'">
+        <a class="card card--stormy-sea" href="about-stormy-sea/">
             <div class="card__inner">
-                <img class="card__img" src="images/stormy-sea-screen1.png"
-                    alt="Stormy Sea ScreenShot" width="400px" height="225px">
+                <div class="card__img"></div>
                 <div class="card__body">
-                    <h1 class="card__heading">Stormy Sea<br><br></h1>
                     <p>
                         Global Game Jam 2017<br>
-                        Voted "Best Overall Game" at the Albany IGDA meet
                     </p>
                 </div>
             </div>
         </a>
         <!-- Jet Tag -->
-        <a class="card"
-            href="about-jet-tag/"
-            onmouseover="this.children[0].children[0].src='images/jettag-gif1.gif'"
-            onmouseout="this.children[0].children[0].src='images/jettag-screen2.png'">
+        <a class="card card--jet-tag" href="about-jet-tag/">
             <div class="card__inner">
-                <img class="card__img" src="images/jettag-screen2.png"
-                    alt="Jet Tag ScreenShot" width="400px" height="225px">
+                <div class="card__img"></div>
                 <div class="card__body">
-                    <h1 class="card__heading">Jet Tag<br><br></h1>
                     <p>
-                        Competitive juking<br>
-                        Rensselaer Game Showcase Fall 2016
+                        Tag with powerups<br>
+                        Rensselaer Game Showcase 2016
                     </p>
                 </div>
             </div>
         </a>
         <!-- Flock of Forts -->
-        <a class="card"
-            href="about-flock-of-forts/"
-            onmouseover="this.children[0].children[0].src='images/fof-gif1.gif'"
-            onmouseout="this.children[0].children[0].src='images/fof-screen1.png'">
+        <a class="card card--flock-of-forts" href="about-flock-of-forts/">
             <div class="card__inner">
-                <img class="card__img" src="images/fof-screen1.png"
-                    alt="FOF ScreenShot" width="400px" height="225px">
+                <div class="card__img"></div>
                 <div class="card__body">
-                    <h1 class="card__heading">Flock of Forts<br><br></h1>
                     <p>
-                        A floating castle artillery strategy game!
+                        A floating castle artillery game
+                    </p>
+                </div>
+            </div>
+        </a>
+        <!-- False Time -->
+        <a class="card card--false-time" href="about-false-time/">
+            <div class="card__inner">
+                <div class="card__img"></div>
+                <div class="card__body">
+                    <p>
+                        Galcon, but with || universes and time travel
                     </p>
                 </div>
             </div>
@@ -130,7 +141,7 @@
     </article>
     <footer class="footer footer--dark">
         <div class="footer__inner">
-            <p>&copy; 2019 Robert Wild</p>
+            <p>&copy; 2021 Robert Wild</p>
         </div>
     </footer>
 </body>
