@@ -179,8 +179,7 @@ html {
     line-height: var(--site-header-height);
     padding: 0px 0px 0px 50px;
     margin: auto;
-    background-image: url(../images/logo3.png);
-    background-position: left center;
+    background-image: url(../images/logo.png);
     background-repeat: no-repeat;
     background-size: 40px 40px;
     color: var(--color-logo);
@@ -218,7 +217,6 @@ html {
 }
 .card:hover .card__inner {
     transform: translate(0px, -10px);
-    /* border: 1px solid #fff; */
 }
 .card__img {
     display: block;
@@ -227,6 +225,8 @@ html {
     max-width: 100%;
     margin: 0px;
     box-sizing: border-box;
+    background-size: cover;
+  );
 }
 .card__video {
     display: block;
@@ -236,7 +236,7 @@ html {
     box-sizing: border-box;
 }
 .card__body {
-    padding: 20px 30px 80px 30px;
+    padding: 10px 30px 80px 30px;
 }
 
 /* pdf-content */
@@ -354,60 +354,68 @@ html {
 .card--me:hover .card__inner {
     transform: none;
 }
+.card--kayak .card__inner {
+	border-radius: 41% 59% 44% 56% / 51% 56% 44% 49%;
+	margin-top: 14px;
+}
 .card--kayak .card__img {
-    content: url(../images/kayak1.png);
+    background-image: url(../images/kayak1.png);
 }
 .card--kayak:hover .card__img {
-    content: url(../images/kayak-gif1.gif);
+    background-image: url(../images/kayak-gif1.gif);
 }
-.card--flash .card__img {
-    content: url(../images/flash-screen2.png);
+.card--chord-board .card__inner {
+	border-radius: 48% 52% 37% 63% / 39% 55% 45% 61%;
+	margin-top: 13px;
 }
 .card--chord-board .card__img {
-    content: url(../images/chord-board-screen1.png);
+    background-image: url(../images/chord-board-screen1.png);
 }
 .card--chord-board:hover .card__img {
-    content: url(../images/chord-board-gif1.gif);
+    background-image: url(../images/chord-board-gif1.gif);
+}
+.card--stormy-sea .card__inner {
+	border-radius: 51% 49% 57% 43% / 36% 61% 39% 64%;
+	margin-top: 18px;
 }
 .card--stormy-sea .card__img {
-    content: url(../images/stormy-sea-screen1.png);
+    background-image: url(../images/stormy-sea-screen1.png);
 }
 .card--stormy-sea:hover .card__img {
-    content: url(../images/stormy-sea-gif1.gif);
+    background-image: url(../images/stormy-sea-gif1.gif);
+}
+.card--jet-tag .card__inner {
+	border-radius: 52% 48% 58% 42% / 36% 52% 48% 64%;
+	margin-top: 15px;
 }
 .card--jet-tag .card__img {
-    content: url(../images/jettag-screen2.png);
+    background-image: url(../images/jettag-screen2.png);
 }
 .card--jet-tag:hover .card__img {
-    content: url(../images/jettag-gif1.gif);
+    background-image: url(../images/jettag-gif1.gif);
+}
+.card--flock-of-forts .card__inner {
+	border-radius: 41% 59% 59% 41% / 46% 37% 63% 54%;
+	margin-top: 10px;
 }
 .card--flock-of-forts .card__img {
-    content: url(../images/fof-screen1.png);
+    background-image: url(../images/fof-screen1.png);
 }
 .card--flock-of-forts:hover .card__img {
-    content: url(../images/fof-gif1.gif);
+    background-image: url(../images/fof-gif1.gif);
+}
+.card--false-time .card__inner {
+	border-radius: 61% 39% 42% 58% / 61% 56% 44% 39%;
+	margin-top: 6px;
 }
 .card--false-time .card__img {
-    content: url(../images/false-time-screen1.png);
+    background-image: url(../images/false-time-screen1.png);
 }
 .card--false-time:hover .card__img {
-    content: url(../images/false-time-gif1.gif);
+    background-image: url(../images/false-time-gif1.gif);
 }
 
 
 /*---------------------------------------------------------------------------*/
 /*  05 Misc
 /*---------------------------------------------------------------------------*/
-
-/* preloading */
-body:after {
-    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content:
-        url(../images/kayak-gif1.gif)
-        url(../images/flash-gif1.gif)
-        url(../images/chord-board-gif1.gif)
-        url(../images/stormy-sea-gif1.gif)
-        url(../images/jettag-gif1.gif)
-        url(../images/fof-gif1.gif)
-        url(../images/false-time-gif1.gif);
-}
