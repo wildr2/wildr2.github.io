@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/*---------------------------------------------------------------------------*/
+/*  01 Reset
+/*  02 Vars
+/*  03 Blocks
+/*  03 Elements
+/*  03 Modifiers
+/*  03 Misc
+/*
+/*---------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------*/
+/*  01 Reset
+/*---------------------------------------------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1em;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*---------------------------------------------------------------------------*/
+/*  02 Vars
+/*---------------------------------------------------------------------------*/
+
+:root{
+    --color-bg: #fafafa;
+    --color-separator: #ccc;
+    --color-text: #444;
+    --color-link: #a6a6a6;
+    --color-link-hover: #fc0e79;
+    --inner-width: 960px;
+}
+
+
+/*---------------------------------------------------------------------------*/
+/*  03 Blocks
+/*---------------------------------------------------------------------------*/
+
+html {
+    height: 100%;
+}
+
+.page {
+    min-height: 100%;
+    overflow: auto;
+    background-color: var(--color-bg);
+    /*font-family:'Arial', 'Sans-Serif';*/
+    font-family: "Segoe UI", Helvetica, sans-serif;
+    color: var(--color-text);
+    font-size: 1.1em;
+    line-height: 1.3em;
+    font-weight: normal;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.article {
+    min-height: calc(100vh - 10px);
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+.unity-player {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+.footer {
+    padding: 20px 10px 0px 10px;
+    height: 100px;
+    text-align: right;
+}
+
+/*---------------------------------------------------------------------------*/
+/*  04 Elements
+/*---------------------------------------------------------------------------*/
+
+/* article */
+.article__inner {
+    width: var(--inner-width);
+    max-width: 100%;
+    margin: auto;
+    text-align: left;
+}
+.article__heading {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.article__text {
+    line-height: 1.5;
+}
+.article__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--color-separator);
+    box-sizing: border-box;
+}
+.video-wrapper {
+  position: relative;
+  width: 100%;
+}
+.video-wrapper__16by9 {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+.video-wrapper iframe {
+  position: absolute;
+}
+.article__link {
+    display: inline-block;
+    color: var(--color-link);
+    word-break: break-all;
+    text-decoration: underline;
+}
+.article__link:hover {
+    color: var(--color-link-hover);
+}
+.article__bullet-ul {
+    list-style-type: disc;
+    margin-left: 1em;
+}
+.article__bullet-ul li {
+    margin: 0.5em;
+}
+.article__bullet-ul--circle {
+    list-style-type: circle;
+}
+
+/*---------------------------------------------------------------------------*/
+/*  04 Modifiers
+/*---------------------------------------------------------------------------*/
