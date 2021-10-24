@@ -180,7 +180,7 @@ html {
     padding: 0px 0px 0px 50px;
     margin: auto;
     image-rendering: pixelated;
-    background-image: url(../images/org_40.png);
+    background-image: url(../images/logo.png);
     background-repeat: no-repeat;
     background-size: 40px 40px;
     color: var(--color-logo);
