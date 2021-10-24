@@ -179,7 +179,8 @@ html {
     line-height: var(--site-header-height);
     padding: 0px 0px 0px 50px;
     margin: auto;
-    background-image: url(../images/logo.png);
+    image-rendering: pixelated;
+    background-image: url(../images/org_40.png);
     background-repeat: no-repeat;
     background-size: 40px 40px;
     color: var(--color-logo);
