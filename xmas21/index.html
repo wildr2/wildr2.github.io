@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>XMAS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            let joke_ids = [
+                "1cb5",
+                "9dce",
+                "cb75",
+                "0458"
+            ]
+            let jokes = [
+                ["Who hides in the bakery at Christmas?", "A mince spy!"],
+                ["What's the most popular Christmas wine?", "'I don't like brussels sprouts!'"],
+                ["What happened to the man who stole an advent calendar?", "He got 25 days!"],
+                ["Why are christmas trees like bad knitters?", "They keep loosing their needles!"]
+            ]
+            let colors = [
+                "#4e3a36",
+                "#561a2d",
+                "#b73636",
+                "#2c7240"
+            ]
+
+            let params = new URLSearchParams(location.search);
+            let joke_id = params.get('x');
+            let joke_index = joke_ids.indexOf(joke_id);
+
+            if (joke_index >= 0) {
+                let root = document.documentElement;
+                root.style.setProperty('--color-bg', colors[joke_index]);
+
+                let joke_btn = document.getElementsByClassName("article__joke")[0];
+                joke_btn.innerHTML = jokes[joke_index][0];
+                joke_btn.setAttribute("answer", jokes[joke_index][1]);
+
+                joke_btn.addEventListener('click', function() {
+                    if (joke_btn.getAttribute("answer") != joke_btn.innerHTML) {
+                        joke_btn.setAttribute("question", joke_btn.innerHTML);
+                        joke_btn.innerHTML = joke_btn.getAttribute("answer");
+                    } else {
+                        joke_btn.setAttribute("answer", joke_btn.innerHTML);
+                        joke_btn.innerHTML = joke_btn.getAttribute("question");
+                    }
+                }, false);
+            }
+        });
+    </script>
+</head>
+<body class="page">
+    <article class="article">
+        <div class="article__inner">
+            <button class="article__joke"></button>
+        </div>
+    </article>
+</body>
+</html>
