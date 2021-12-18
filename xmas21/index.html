@@ -49,13 +49,27 @@
                     }
                 }, false);
             }
+            else {
+                let root = document.documentElement;
+                root.style.setProperty('--color-bg', "#bfac83");
+            }
         });
     </script>
 </head>
 <body class="page">
     <article class="article">
         <div class="article__inner">
-            <button class="article__joke"></button>
+            <!-- <button class="article__joke"></button> -->
+            <img class="article__img" src="book.gif"
+                alt="book" width="640px" height="360px" style="margin-bottom: -100px">
+            <p class="article__prize_name">
+                +1 Audible Credit!
+            </p>
+            <p class="article__text">
+                What audiobook do you want? Be as specific as you like.
+            </p>
+            <textarea class="article__msg_box" name="message" placeholder="" required></textarea>
+            <button class="article__send_button" type="submit">Tell Robert</button>
         </div>
     </article>
 </body>

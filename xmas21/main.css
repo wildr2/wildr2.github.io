@@ -91,7 +91,7 @@ html {
     overflow: auto;
     background-color: var(--color-bg);
     /*font-family:'Arial', 'Sans-Serif';*/
-    font-family: "Segoe UI", Helvetica, sans-serif;
+    font-family: monospace;
     color: var(--color-text);
     font-size: 1.1em;
     line-height: 1.3em;
@@ -134,17 +134,45 @@ html {
 }
 .article__text {
     line-height: 1.5;
-    padding-top: 30px;
     padding-bottom: 30px;
     font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+.article__prize_name {
+    line-height: 1.5;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    animation: blinker 1s step-start 5;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.article__msg_box {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 4.0em;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 0.2em;
+}
+.article__send_button {
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    font-family: inherit;
     font-size: 1.5em;
 }
 .article__img {
     display: block;
     max-width: 100%;
     height: auto;
-    border: 1px solid var(--color-separator);
-    box-sizing: border-box;
+    margin: auto;
 }
 .article__joke {
     line-height: 1.5;
