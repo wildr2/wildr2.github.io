@@ -57,5 +57,6 @@ else if (prize instanceof BookPrize) {
     if (book_img) {
         book_img.classList.add("article__img--book" + prize_id)
     }
+    document.getElementById("id_input").value = prize_id;
     show_prize_elements("article__prize--book");
 }
