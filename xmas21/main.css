@@ -138,6 +138,11 @@ html {
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.article__prize {
+    display: none;
 }
 .article__prize_name {
     line-height: 1.5;
@@ -225,3 +230,28 @@ html {
 /*---------------------------------------------------------------------------*/
 /*  04 Modifiers
 /*---------------------------------------------------------------------------*/
+
+.test {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.article__img--book8127 {
+    content: url("book1.gif");
+    padding-top: 120px;
+    width: 350px;
+}
+.article__img--book2634 {
+    content: url("book2.gif");
+    padding-top: 100px;
+    width: 300px;
+}
+.article__img--booka7c3 {
+    content: url("book3.gif");
+    padding-top: 140px;
+    width: 350px;
+}
