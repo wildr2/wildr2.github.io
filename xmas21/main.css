@@ -138,8 +138,6 @@ html {
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
 }
 .article__prize {
     display: none;
@@ -148,9 +146,19 @@ html {
     line-height: 1.5;
     padding-bottom: 30px;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 2.3em;
     text-align: center;
     animation: blinker 1s step-start 5;
+}
+.article__prize_img_wrapper {
+    display: block;
+    margin: auto;
+    /* margin-top: 20px; */
+    width: 350px;
+    height: 350px;
+    background-color: #0000;
+    /* border: 1px solid #fff; */
+    overflow: hidden;
 }
 @keyframes blinker {
   50% {
@@ -160,7 +168,8 @@ html {
 .article__msg_box {
     display: block;
     margin: auto;
-    width: 50%;
+    max-width: 100%;
+    width: 600px;
     height: 4.0em;
     font-size: 1.5em;
     border: none;
@@ -231,27 +240,18 @@ html {
 /*  04 Modifiers
 /*---------------------------------------------------------------------------*/
 
-.test {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
 .article__img--book8127 {
     content: url("book1.gif");
-    padding-top: 120px;
-    width: 350px;
+    width: 100%;
+    padding-top: 12%;
 }
 .article__img--book2634 {
     content: url("book2.gif");
-    padding-top: 100px;
-    width: 300px;
+    width: 70%;
+    padding-top: 25%;
 }
 .article__img--booka7c3 {
     content: url("book3.gif");
-    padding-top: 140px;
-    width: 350px;
+    width: 100%;
+    padding-top: 20%;
 }

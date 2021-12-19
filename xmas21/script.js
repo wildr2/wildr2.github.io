@@ -54,6 +54,8 @@ if (prize instanceof JokePrize) {
 }
 else if (prize instanceof BookPrize) {
     let book_img = document.getElementsByClassName("article__img")[0];
-    book_img.classList.add("article__img--book" + prize_id)
+    if (book_img) {
+        book_img.classList.add("article__img--book" + prize_id)
+    }
     show_prize_elements("article__prize--book");
 }
