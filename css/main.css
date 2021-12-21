@@ -355,6 +355,14 @@ html {
 .card--me:hover .card__inner {
     transform: none;
 }
+.card--gag .card__inner {
+    border-radius: 61% 39% 57% 43% / 45% 53% 47% 55%;
+	margin-top: 18px;
+}
+.card--gag:hover .card--gag__text {
+    transition: all 0.2s linear;
+    color: #0000;
+}
 .card--kayak .card__inner {
 	border-radius: 41% 59% 44% 56% / 51% 56% 44% 49%;
 	margin-top: 14px;
