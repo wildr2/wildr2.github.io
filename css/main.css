@@ -355,11 +355,11 @@ html {
 .card--me:hover .card__inner {
     transform: none;
 }
-.card--gag .card__inner {
+.card--aag .card__inner {
     border-radius: 61% 39% 57% 43% / 45% 53% 47% 55%;
 	margin-top: 18px;
 }
-.card--gag:hover .card--gag__text {
+.card--aag:hover .card--aag__text {
     transition: all 0.2s linear;
     color: #0000;
 }
