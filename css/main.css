@@ -212,7 +212,7 @@ html {
 .card__inner {
     transition: transform 0s linear;
     background-color: var(--color-card-bg);
-    border: 1px solid #fff;
+    border: thin solid #fff;
     border-radius: 67% 77% 88% 71% / 66% 83% 62% 72%;
     overflow: hidden;
 }
@@ -354,6 +354,14 @@ html {
 }
 .card--me:hover .card__inner {
     transform: none;
+}
+.card--aag .card__inner {
+    border-radius: 61% 39% 57% 43% / 45% 53% 47% 55%;
+	margin-top: 18px;
+}
+.card--aag:hover .card--aag__text {
+    transition: all 0.2s linear;
+    color: #0000;
 }
 .card--kayak .card__inner {
 	border-radius: 41% 59% 44% 56% / 51% 56% 44% 49%;

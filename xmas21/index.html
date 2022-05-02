@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ho Ho Ho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="page">
+    <article class="article">
+        <div class="article__inner">
+            <div class="article__prize article__prize--joke">
+                <button class="article__joke"></button>
+            </div>
+            <div class="article__prize article__prize--book">
+                <div class="article__prize_img_wrapper">
+                    <img class="article__img" alt="book">
+                </div>
+                <p class="article__prize_name">
+                    +1 Audible Credit!
+                </p>
+                <p class="article__text">
+                    What audiobook do you want? Be as specific as you like.
+                </p>
+                <form
+                    action="https://formspree.io/f/moqrqbav"
+                    method="POST">
+                    <input id="id_input" name="id" type="text" style="display:none"/>
+                    <textarea class="article__msg_box" name="message" placeholder="" required></textarea>
+                    <button class="article__send_button" type="submit">Tell Robert</button>
+                </form>
+            </div>
+        </div>
+    </article>
+</body>
+</html>
