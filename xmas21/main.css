@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/*---------------------------------------------------------------------------*/
+/*  01 Reset
+/*  02 Vars
+/*  03 Blocks
+/*  03 Elements
+/*  03 Modifiers
+/*  03 Misc
+/*
+/*---------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------*/
+/*  01 Reset
+/*---------------------------------------------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1em;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*---------------------------------------------------------------------------*/
+/*  02 Vars
+/*---------------------------------------------------------------------------*/
+
+:root{
+    --color-bg: #000;
+    --color-separator: #ccc;
+    --color-text: #fff;
+    --color-link: #a6a6a6;
+    --color-link-hover: #fc0e79;
+    --inner-width: 960px;
+}
+
+
+/*---------------------------------------------------------------------------*/
+/*  03 Blocks
+/*---------------------------------------------------------------------------*/
+
+html {
+    height: 100%;
+}
+
+.page {
+    min-height: 100%;
+    overflow: auto;
+    background-color: var(--color-bg);
+    /*font-family:'Arial', 'Sans-Serif';*/
+    font-family: monospace;
+    color: var(--color-text);
+    font-size: 1.1em;
+    line-height: 1.3em;
+    font-weight: normal;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.article {
+    min-height: calc(100vh - 10px);
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+.unity-player {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+.footer {
+    padding: 20px 10px 0px 10px;
+    height: 100px;
+    text-align: right;
+}
+
+/*---------------------------------------------------------------------------*/
+/*  04 Elements
+/*---------------------------------------------------------------------------*/
+
+/* article */
+.article__inner {
+    width: var(--inner-width);
+    max-width: 100%;
+    margin: auto;
+    text-align: left;
+}
+.article__heading {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.article__text {
+    line-height: 1.5;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+.article__prize {
+    display: none;
+}
+.article__prize_name {
+    line-height: 1.5;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 2.3em;
+    text-align: center;
+    animation: blinker 1s step-start 5;
+}
+.article__prize_img_wrapper {
+    display: block;
+    margin: auto;
+    /* margin-top: 20px; */
+    width: 350px;
+    height: 350px;
+    background-color: #0000;
+    /* border: 1px solid #fff; */
+    overflow: hidden;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.article__msg_box {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    width: 600px;
+    height: 4.0em;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 0.2em;
+}
+.article__send_button {
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    font-family: inherit;
+    font-size: 1.5em;
+}
+.article__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+.article__joke {
+    line-height: 1.5;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.video-wrapper {
+  position: relative;
+  width: 100%;
+}
+.video-wrapper__16by9 {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+.video-wrapper iframe {
+  position: absolute;
+}
+.article__link {
+    display: inline-block;
+    color: var(--color-link);
+    word-break: break-all;
+    text-decoration: underline;
+}
+.article__link:hover {
+    color: var(--color-link-hover);
+}
+.article__bullet-ul {
+    list-style-type: disc;
+    margin-left: 1em;
+}
+.article__bullet-ul li {
+    margin: 0.5em;
+}
+.article__bullet-ul--circle {
+    list-style-type: circle;
+}
+
+/*---------------------------------------------------------------------------*/
+/*  04 Modifiers
+/*---------------------------------------------------------------------------*/
+
+.article__img--book8127 {
+    content: url("book1.gif");
+    width: 100%;
+    padding-top: 12%;
+}
+.article__img--book2634 {
+    content: url("book2.gif");
+    width: 70%;
+    padding-top: 25%;
+}
+.article__img--booka7c3 {
+    content: url("book3.gif");
+    width: 100%;
+    padding-top: 20%;
+}
