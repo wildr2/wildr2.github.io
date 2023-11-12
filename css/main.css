@@ -153,7 +153,7 @@ html {
 }
 .footer {
 	padding: var(--site-footer-reveal-height) 10px 0px 10px;
-	height: 0px;
+	height: 100px;
 	text-align: right;
 	color: var(--color-footer-text);
 	background-color: var(--color-footer);
