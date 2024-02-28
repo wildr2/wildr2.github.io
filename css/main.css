@@ -123,6 +123,11 @@ html {
 	padding: 0px 10px 0px 10px;
 	/*box-shadow: 0px 2px 2px #000;*/
 }
+@media print {
+	.site-header {
+		display: none !important;
+	}
+}
 .article {
 	min-height: calc(100vh - var(--site-header-height) - var(--site-footer-reveal-height));
 	text-align: center;
@@ -157,6 +162,11 @@ html {
 	text-align: right;
 	color: var(--color-footer-text);
 	background-color: var(--color-footer);
+}
+@media print {
+	.footer {
+		display: none !important;
+	}
 }
 
 
@@ -311,6 +321,20 @@ html {
 	width: var(--inner-width);
 	max-width: 100%;
 	margin: auto;
+}
+
+@media print {
+	.resume {
+		transform-origin: top center;
+		transform: scale(0.9);
+		/* page-break-after: auto; */
+	}
+	@page
+	{
+		size: auto;
+		/* Set margin in printer settings. */
+		margin: 10mm 0mm 10mm 0mm;
+	} 
 }
 
 /*---------------------------------------------------------------------------*/
