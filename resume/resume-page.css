@@ -1,0 +1,9 @@
+
+@media print {
+	@page
+	{
+		size: auto;
+		/* Set margin in printer settings. */
+		margin: 10mm 5mm 10mm 5mm;
+	} 
+}

@@ -323,20 +323,6 @@ html {
 	margin: auto;
 }
 
-@media print {
-	.resume {
-		transform-origin: top center;
-		transform: scale(0.9);
-		/* page-break-after: auto; */
-	}
-	@page
-	{
-		size: auto;
-		/* Set margin in printer settings. */
-		margin: 10mm 0mm 10mm 0mm;
-	} 
-}
-
 /*---------------------------------------------------------------------------*/
 /*  05 Modifiers
 /*---------------------------------------------------------------------------*/
