@@ -89,7 +89,6 @@ body {
 	max-width: 100%;
 	line-height: 1.1em;
 	margin: auto;
-	margin-top: 50px;
 	width: var(--inner-width);
 	/* Scale to fit letter size page. */
 	font-size: 80%;
@@ -160,6 +159,11 @@ ul {
 
 a {
 	text-decoration: none;
+}
+@media print {
+	a {
+		color: inherit;
+	}
 }
 
 .email {

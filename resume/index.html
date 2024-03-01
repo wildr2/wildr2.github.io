@@ -17,7 +17,17 @@
 		</div>
 	</header>
 	<article class="article">
-		<iframe class="resume" width="100%" height="1300px" frameborder="0" src="data/resume.html"></iframe>
+		<div class="resume-buttons">
+			<ul class="resume-buttons__ul">
+				<li class="resume-buttons__li">
+					<a class="article__link" href="data/resume.pdf" download="robert_wild_resume.pdf">Download</a>
+				</li>
+				<li class="resume-buttons__li">
+					<a class="article__link" href="#" onclick="(function(){ window.print(); })();">Print</a>
+				</li>
+			</ul>
+		</div>
+		<iframe class="resume" frameborder="0" src="data/resume.html"></iframe>
 	</article>
 	<footer class="footer">
 		<div class="footer__inner">
