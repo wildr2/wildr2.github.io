@@ -106,8 +106,7 @@ html {
 .page {
 	min-height: 100%;
 	overflow: auto;
-	background-color: var(--color-bg);
-	/*font-family:'Arial', 'Sans-Serif';*/
+	background-color: var(--color-bg-dark);
 	font-family: "Segoe UI", Helvetica, sans-serif;
 	color: var(--color-text);
 	font-size: 1.1em;
@@ -121,12 +120,12 @@ html {
 	max-width: 100%;
 	overflow: hidden;
 	padding: 0px 10px 0px 10px;
-	/*box-shadow: 0px 2px 2px #000;*/
 }
 .article {
 	min-height: calc(100vh - var(--site-header-height) - var(--site-footer-reveal-height));
 	text-align: center;
 	padding: 0px 10px 0px 10px;
+	background-color: var(--color-bg);
 }
 .card {
 	display: inline-block;
@@ -321,6 +320,10 @@ html {
 .page--dark {
 	background-color: var(--color-bg-dark);
 	color: var(--color-text-dark);
+}
+
+.article--dark {
+	background-color: var(--color-bg-dark);
 }
 
 /* site-header */
